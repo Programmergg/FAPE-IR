@@ -1,5 +1,5 @@
 <p align="center">
-Code and data for paper <a href="https://arxiv.org/abs/2403.12486">FAPE-IR: Frequency-Aware Planning and Execution Framework for All-in-One Image Restoration</a>
+Code and data for paper <a href="https://arxiv.org/abs/2511.14099">FAPE-IR: Frequency-Aware Planning and Execution Framework for All-in-One Image Restoration</a>
     </br>
     <div align="center">
       <img src="logo.png" alt="Logo" style="width:30%; height:30%;">
@@ -14,10 +14,6 @@ Code and data for paper <a href="https://arxiv.org/abs/2403.12486">FAPE-IR: Freq
         </a>
     </div>
 </p>
-
-This repository is for the paper:
-
-**FAPE-IR: Frequency-Aware Planning and Execution Framework for All-in-One Image Restoration**
 
 ## Status
 
