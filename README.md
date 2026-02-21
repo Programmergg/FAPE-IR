@@ -2,7 +2,7 @@
 Repo for paper <a href="https://arxiv.org/abs/2511.14099">FAPE-IR: Frequency-Aware Planning and Execution Framework for All-in-One Image Restoration (CVPR2026)</a>
     </br>
     <div align="center">
-      <img src="logo.png" alt="Logo" style="width:30%; height:30%;">
+      <img src="logo.jpg" alt="Logo" style="width:30%; height:30%;">
     </div>
     </br>
     <div align="center">
