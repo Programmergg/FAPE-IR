@@ -1,5 +1,5 @@
 <p align="center">
-Repo for paper <a href="https://arxiv.org/abs/2511.14099">FAPE-IR: Frequency-Aware Planning and Execution Framework for All-in-One Image Restoration</a>
+Repo for paper <a href="https://arxiv.org/abs/2511.14099">FAPE-IR: Frequency-Aware Planning and Execution Framework for All-in-One Image Restoration (CVPR2026)</a>
     </br>
     <div align="center">
       <img src="logo.png" alt="Logo" style="width:30%; height:30%;">
