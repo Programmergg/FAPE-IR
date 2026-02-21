@@ -1,19 +1,18 @@
 <p align="center">
-Repo for paper <a href="https://arxiv.org/abs/2511.14099">FAPE-IR: Frequency-Aware Planning and Execution Framework for All-in-One Image Restoration (CVPR2026)</a>
-    </br>
-    <div align="center">
-      <img src="logo.jpg" alt="Logo" style="width:30%; height:30%;">
-    </div>
-    </br>
-    <div align="center">
-        <a href="https://www.python.org/">
-            <img alt="Build" src="https://img.shields.io/badge/Python-3.11+-1f425f.svg?color=purple">
-        </a>
-        <a>
-            <img alt="MIT" src="https://img.shields.io/badge/License-MIT-yellow">
-        </a>
-    </div>
+  <img src="logo.png" height="120">
 </p>
+
+### FAPE-IR: Frequency-Aware Planning and Execution Framework for All-in-One Image Restoration [CVPR 2026]
+![visitors](https://visitor-badge.laobi.icu/badge?page_id=Programmergg.FAPE-IR)
+[![GitHub Stars](https://img.shields.io/github/stars/Programmergg/FAPE-IR?style=social)](https://github.com/Programmergg/FAPE-IR)
+
+> [[Paper (arXiv)](https://arxiv.org/abs/2511.14099)] &emsp;
+> **Jingren Liu**, **Shuning Xu**, **Qirui Yang**, **Yun Wang**, **Xiangyu Chen**, **Zhong Ji** <br>
+
+---
+*This repo is an early exploration of unified image restoration (unified understanding & generation). We are actively investigating more lightweight designs and alternatives beyond the MLLM + Diffusion paradigm, and will continuously maintain and update this repo with new progress.*
+
+---
 
 ## Status
 
@@ -26,13 +25,92 @@ We are preparing:
 
 Please **star** this repo to get updates.
 
-## What will be released
+---
 
-- Inference code (single image / folder)
-- Training code and configs
-- Evaluation scripts
-- Pretrained models and model zoo (if applicable)
-- Example results
+## 🚩 New Features/Updates
+- ✅ Nov 25, 2025. Release the arXiv paper.
+- 🚧 TBD. Release inference code.
+- 🚧 TBD. Release training code.
+- 🚧 TBD. Release pretrained checkpoints & model zoo.
+- 🚧 TBD. Release evaluation scripts and example results.
+
+---
+
+## ⚡ To Do
+- [ ] Release inference code
+- [ ] Release training code & configs
+- [ ] Release evaluation scripts
+- [ ] Release pretrained checkpoints
+- [ ] Release documentation & scripts
+- [ ] Release example results
+
+---
+
+## :book: Resources
+
+### Checkpoints / Datasets / Results (TBD)
+
+|Item|Link|
+|:-|:-|
+|Pretrained checkpoints|TBD|
+|Testset (GT/LQ)|TBD|
+|Visual results|TBD|
+|Compared methods|TBD|
+
+---
+
+## :computer: Usage (TBD)
+
+### :arrow_right: Environment
+```bash
+conda create -n fapeir python=3.11 -y
+conda activate fapeir
+pip install -r requirements.txt
+````
+
+### :arrow_right: Inference
+
+**Single image**
+
+```bash
+python inference.py --input ./examples/0001.png --output ./results
+```
+
+**Folder**
+
+```bash
+python inference.py --input ./examples --output ./results
+```
+
+### :arrow_right: Evaluation
+
+```bash
+python eval.py --inp_imgs ./results --gt_imgs ./dataset/GT --save_dir ./logs
+```
+
+### :arrow_right: Training
+
+```bash
+bash train.sh
+```
+
+---
+
+## Results (TBD)
+
+* **Quantitative Results**
+
+<p align="center">
+  <img width="800" src="./assets/quantitative_results.png">
+</p>
+
+* **Qualitative Results**
+
+<p align="center">
+  <img width="800" src="./assets/qualitative_results.png">
+</p>
+
+---
 
 ## Citation
 
@@ -45,3 +123,18 @@ If you use this work, please cite:
   journal={arXiv preprint arXiv:2511.14099},
   year={2025}
 }
+```
+
+---
+
+## Acknowledgement
+
+We thank all collaborators and colleagues for helpful discussions and support.
+
+---
+
+## Contact
+
+If you have any questions, feel free to reach out:
+
+* Email: jrl0219@tju.edu.cn
