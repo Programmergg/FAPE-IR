@@ -129,7 +129,7 @@ If you use this work, please cite:
 
 ## Acknowledgement
 
-We thank all collaborators and colleagues for helpful discussions and support.
+We thank all collaborators and colleagues for their helpful discussions and support. We especially thank Dr. Chen Xiangyu and Professor Ji Zhong for their guidance and revisions to this work.
 
 ---
 
