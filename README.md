@@ -1,5 +1,5 @@
 <p align="center">
-Code and data for paper <a href="https://arxiv.org/abs/2511.14099">FAPE-IR: Frequency-Aware Planning and Execution Framework for All-in-One Image Restoration</a>
+Repo for paper <a href="https://arxiv.org/abs/2511.14099">FAPE-IR: Frequency-Aware Planning and Execution Framework for All-in-One Image Restoration</a>
     </br>
     <div align="center">
       <img src="logo.png" alt="Logo" style="width:30%; height:30%;">
@@ -7,7 +7,7 @@ Code and data for paper <a href="https://arxiv.org/abs/2511.14099">FAPE-IR: Freq
     </br>
     <div align="center">
         <a href="https://www.python.org/">
-            <img alt="Build" src="https://img.shields.io/badge/Python-3.8+-1f425f.svg?color=purple">
+            <img alt="Build" src="https://img.shields.io/badge/Python-3.11+-1f425f.svg?color=purple">
         </a>
         <a>
             <img alt="MIT" src="https://img.shields.io/badge/License-MIT-yellow">
