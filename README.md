@@ -7,7 +7,9 @@
 [![GitHub Stars](https://img.shields.io/github/stars/Programmergg/FAPE-IR?style=social)](https://github.com/Programmergg/FAPE-IR)
 
 > [[Paper (arXiv)](https://arxiv.org/abs/2511.14099)] &emsp;
-> **Jingren Liu**, **Shuning Xu**, **Qirui Yang**, **Yun Wang**, **Xiangyu Chen**, **Zhong Ji** <br>
+> **Jingren Liu**<sup>&#42;</sup>, **Shuning Xu**<sup>&#42;</sup>, **Qirui Yang**<sup>&#42;</sup>, **Yun Wang**, **Xiangyu Chen**<sup>✉</sup>, **Zhong Ji**<sup>✉</sup> <br>
+> <small><sup>&#42;</sup>Equal contribution &emsp; <sup>✉</sup>Corresponding author</small>
+
 
 ---
 *This repo is an early exploration of unified image restoration (unified understanding & generation). We are actively investigating more lightweight designs and alternatives beyond the MLLM + Diffusion paradigm, and will continuously maintain and update this repo with new progress.*
