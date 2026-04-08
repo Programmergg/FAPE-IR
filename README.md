@@ -101,7 +101,7 @@ bash train.sh
 <p align="center">
   <img src="./figs/table2.png" width="400">
   <br>
-  <em>Figure 2. Unified comparison across SR task series. FAPE-IR achieves the best PSNR / SSIM / LPIPS / FID / DISTS on the majority of metrics.</em>
+  <em>Figure 2. Unified comparison across SR task series.  Best in red, second-best in blue.</em>
 </p>
 
 ### Qualitative Results
