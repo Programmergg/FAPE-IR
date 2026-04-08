@@ -32,20 +32,9 @@ Please **star** this repo to get updates.
 
 ## 🚩 New Features/Updates
 - ✅ Nov 25, 2025. Release the arXiv paper.
-- 🚧 TBD. Release inference code.
 - 🚧 TBD. Release training code.
 - 🚧 TBD. Release pretrained checkpoints & model zoo.
 - 🚧 TBD. Release evaluation scripts and example results.
-
----
-
-## ⚡ To Do
-- [ ] Release inference code
-- [ ] Release training code & configs
-- [ ] Release evaluation scripts
-- [ ] Release pretrained checkpoints
-- [ ] Release documentation & scripts
-- [ ] Release example results
 
 ---
 
