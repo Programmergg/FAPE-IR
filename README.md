@@ -58,7 +58,7 @@ Please **star** this repo to get updates.
 conda create -n fapeir python=3.11 -y
 conda activate fapeir
 pip install -r requirements.txt
-````
+```
 
 ### :arrow_right: Inference
 
@@ -88,18 +88,34 @@ bash train.sh
 
 ---
 
-## Results (TBD)
+## :bar_chart: Results
 
-* **Quantitative Results**
+### Quantitative Results
 
 <p align="center">
-  <img width="800" src="./assets/quantitative_results.png">
+  <img src="./figs/table1.png" width="800">
+  <br>
+  <em>Figure 1. Quantitative comparison with state-of-the-art AIO-IR methods on six tasks (deraining, denoising, deblurring, desnowing, dehazing, low-light enhancement). <b>Best</b> in red, <u>second-best</u> in blue.</em>
 </p>
 
-* **Qualitative Results**
+<p align="center">
+  <img src="./figs/table2.png" width="400">
+  <br>
+  <em>Figure 2. Unified comparison across SR task series. FAPE-IR achieves the best PSNR / SSIM / LPIPS / FID / DISTS on the majority of metrics.</em>
+</p>
+
+### Qualitative Results
 
 <p align="center">
-  <img width="800" src="./assets/qualitative_results.png">
+  <img src="./figs/supp1.png" width="900">
+  <br>
+  <em>Figure 6. Qualitative comparison among unified models, including BAGEL, Nexus-Gen, Uniworld-V1, and Emu3.5.</em>
+</p>
+
+<p align="center">
+  <img src="./figs/supp2.png" width="900">
+  <br>
+  <em>Figure 7. Qualitative comparison of restoration results produced by FAPE-IR and state-of-the-art AIO-IR models.</em>
 </p>
 
 ---
@@ -121,7 +137,7 @@ If you use this work, please cite:
 
 ## Acknowledgement
 
-We thank all collaborators and colleagues for their helpful discussions and support. We especially thank Dr. Chen Xiangyu and Professor Ji Zhong for their guidance and revisions to this work.
+We thank all collaborators and colleagues for their helpful discussions and support. We especially thank Dr. Xiangyu Chen and Professor Zhong Ji for their guidance and revisions to this work.
 
 ---
 
