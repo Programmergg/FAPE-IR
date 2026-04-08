@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="logo.png" height="240">
+  <img src="figs/logo.png" height="240">
 </p>
 
 ### FAPE-IR: Frequency-Aware Planning and Execution Framework for All-in-One Image Restoration [CVPR 2026 Accept]
