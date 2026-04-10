@@ -22,7 +22,6 @@
 🚧 **Coming Soon (Open-sourcing in progress).**
 
 We are preparing:
-- clean and reproducible code (training / inference / evaluation)
 - pretrained checkpoints
 - documentation and scripts
 
@@ -32,7 +31,7 @@ Please **star** this repo to get updates.
 
 ## 🚩 New Features/Updates
 - ✅ Nov 25, 2025. Release the arXiv paper.
-- 🚧 TBD. Release training code.
+- ✅ Apr 10, 2026. Release training code.
 - 🚧 TBD. Release pretrained checkpoints & model zoo.
 - 🚧 TBD. Release evaluation scripts and example results.
 
