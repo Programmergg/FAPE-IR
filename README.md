@@ -131,6 +131,14 @@ If you use this work, please cite:
 
 We thank all collaborators and colleagues for their helpful discussions and support. We especially thank Dr. Xiangyu Chen and Professor Zhong Ji for their guidance and revisions to this work.
 
+This project is built upon several foundational open-source works. We sincerely thank the authors of the following repositories for their invaluable contributions to the community:
+
+* **Core Inspiration & Architecture:**
+    * [UniWorld](https://github.com/PKU-YuanGroup/UniWorld): Greatly inspired our unified understanding and generation paradigm.
+    * [Janus](https://github.com/deepseek-ai/Janus): Provided valuable insights into decoupled visual encoding.
+* **Baselines & Comparisons:** We gratefully acknowledge the authors of BAGEL, Nexus-Gen, and Emu3.5 for open-sourcing their code and weights, which facilitated our qualitative and quantitative comparisons.
+* **Frameworks & Utilities:** Our implementation relies on excellent open-source libraries, including Hugging Face's [diffusers](https://github.com/huggingface/diffusers) and [transformers](https://github.com/huggingface/transformers).
+
 ---
 
 ## Contact
