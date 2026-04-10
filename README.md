@@ -17,23 +17,16 @@
 *The three authors are struggling with their doctoral dissertations. Please wait a moment while they work on cleaning the code and providing new directions and suggestions.*
 ---
 
-## Status
 
-🚧 **Coming Soon (Open-sourcing in progress).**
 
-We are preparing:
-- pretrained checkpoints
-- documentation and scripts
-
-Please **star** this repo to get updates.
-
----
 
 ## 🚩 New Features/Updates
 - ✅ Nov 25, 2025. Release the arXiv paper.
 - ✅ Apr 10, 2026. Release training and testing code.
 - 🚧 TBD. Release pretrained checkpoints & model zoo.
 - 🚧 TBD. Release evaluation scripts and example results.
+
+Please **star** this repo to get updates.
 
 ---
 
