@@ -44,39 +44,50 @@ Please **star** this repo to get updates.
 ---
 
 ## :computer: Usage (TBD)
-
 ### :arrow_right: Environment
+
 ```bash
 conda create -n fapeir python=3.11 -y
 conda activate fapeir
-pip install -r requirements.txt
-```
 
-### :arrow_right: Inference
-
-**Single image**
-
-```bash
-python inference.py --input ./examples/0001.png --output ./results
-```
-
-**Folder**
-
-```bash
-python inference.py --input ./examples --output ./results
-```
-
-### :arrow_right: Evaluation
-
-```bash
-python eval.py --inp_imgs ./results --gt_imgs ./dataset/GT --save_dir ./logs
-```
+# Please install dependencies according to your local CUDA / PyTorch setup.
+# A reproducible requirements file will be released soon.
+````
 
 ### :arrow_right: Training
 
+**Single-node training**
+
 ```bash
-bash train.sh
+python -m accelerate.commands.launch \
+  --config_file scripts/accelerate_configs/single_node_zero2.yaml \
+  train.py \
+  scripts/denoiser/flux_qwen2p5vl_7b_vlm_512.yaml
 ```
+
+**Multi-node training**
+
+```bash
+python -m accelerate.commands.launch \
+  --config_file scripts/accelerate_configs/multi_node_zero2.yaml \
+  --num_machines <NUM_MACHINES> \
+  --machine_rank <MACHINE_RANK> \
+  --main_process_ip <MASTER_ADDR> \
+  --main_process_port <MASTER_PORT> \
+  train.py \
+  scripts/denoiser/flux_qwen2p5vl_7b_vlm_512.yaml
+```
+
+**Launcher scripts**
+
+```bash
+bash scripts/denoiser/single_node.sh
+# or adapt the multi-node launcher scripts under scripts/denoiser/
+```
+
+### :arrow_right: Inference / Evaluation
+
+Standalone inference and evaluation scripts are still being cleaned up and will be released in future updates.
 
 ---
 
