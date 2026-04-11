@@ -1,0 +1,120 @@
+training_config:
+  seed: 3072
+  output_dir: trained_weights/fapeir
+  logging_dir: trained_weights/fapeir
+  max_train_steps: 200000
+  optimizer: "prodigy"
+  learning_rate: 1.0  # Note: LoRA typically supports higher learning rates, e.g. 2e-4 or 5e-4
+  sgd_momentum: 0.9
+  adam_beta1: 0.9
+  adam_beta2: 0.99
+  adam_epsilon: 1e-8
+  adam_weight_decay: 0.01  # Increased weight decay; recommended for LoRA training
+  mixed_precision: 'bf16'
+  gradient_checkpointing: false
+  num_train_epochs: 1
+  lr_scheduler: "cosine"
+  lr_warmup_steps: 0  # Increased warmup steps
+  lr_num_cycles: 1
+  lr_power: 1.0
+  resume_from_checkpoint: ~
+  validation_steps: 50000
+  checkpointing_steps: 50000
+  checkpoints_total_limit: 5  # Keep at most 5 checkpoints
+  drop_t5_rate: 1.0
+  discrete_timestep: false
+  mask_weight_type: null
+  gradient_accumulation_steps: 1
+  max_grad_norm: 1.0
+  prodigy_beta3: 0.1
+  prodigy_decouple: true
+  prodigy_use_bias_correction: true
+  prodigy_safeguard_warmup: true
+  prodigy_d_coef: 1.0
+
+  # ========== Path configuration ==========
+  lpips_weights_path: checkpoints/vgg.pth
+
+model_config:
+  pretrained_lvlm_name_or_path: checkpoints/uniworld
+  pretrained_denoiser_name_or_path: checkpoints/flux
+  guidance_scale: 1.0
+
+  # MLP training settings (keep original settings)
+  only_tune_mlp2: false
+  with_tune_mlp2: true
+  pretrained_mlp2_path: checkpoints/denoise_projector_params.bin
+  only_tune_mlp3: false
+  with_tune_mlp3: true
+  pretrained_mlp3_path: checkpoints/vae_projector_only.bin
+  only_tune_siglip_mlp: false
+  with_tune_siglip_mlp: true
+  pretrained_siglip_name_or_path: checkpoints/siglip
+  pretrained_siglip_mlp_path: checkpoints/uniworld/flux-redux-siglipv2-512.bin
+
+  # Other settings
+  only_use_t5: false
+  vae_fp32: true
+  only_tune_image_branch: true
+  vlm_residual_image_factor: 1.0
+
+  # Generation-related configuration
+  gen_max_pixels: 262144  # 512*512
+  generation_max_new_tokens: 512
+  generation_temperature: 0.7
+  generation_top_p: 0.9
+  generation_do_sample: true
+
+dataset_config:
+  ocr_enhancer: false
+  dataset_type: qwen2p5vl
+  min_pixels: 65536
+  max_pixels: 1048576
+  data_txt: datasets/train.txt
+  batch_size: 1
+  num_workers: 16
+  height: 512
+  width: 512
+  pin_memory: true
+  padding_side: "left"
+  anyres: true
+  random_data: false
+
+  # ========== Test data path configuration ==========
+  # DrealSR dataset
+  test_data_root: datasets/sr_testing_data/DrealSR
+  test_scales:
+    - 2
+    - 4
+
+  # Weather datasets (rain, snow, haze, etc.)
+  weather_test_data_root: datasets/sr_testing_data
+  weather_test_types:
+    - weather1
+    - weather2
+    - Snow100K-L
+    - Snow100K-S
+
+  # RealSR dataset
+  realsr_test_data_root: datasets/sr_testing_data/RealSR
+  realsr_camera_types:
+    - Canon
+    - Nikon
+  realsr_scale_factors:
+    - 2
+    - 4
+
+  # Generic test datasets (dehazing, low-light enhancement, etc.)
+  generic_test_data_root: datasets/sr_testing_data
+  generic_datasset_types:  # Note: typo "datasset" is intentional for compatibility with existing code
+    - dehazing_test
+    - LOL2
+    - RealBlur_J
+    - RealBlur_R
+    - GoPro
+    - Urban100_15
+    - Urban100_25
+    - Urban100_50
+
+  # Validation configuration
+  num_validation_samples_per_scale: 100000

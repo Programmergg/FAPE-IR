@@ -1,0 +1,14 @@
+compute_environment: LOCAL_MACHINE
+distributed_type: DEEPSPEED
+
+deepspeed_config:
+  deepspeed_config_file: scripts/accelerate_configs/zero3.json
+  deepspeed_multinode_launcher: standard
+
+fsdp_config: {}
+main_training_function: main
+use_cpu: false
+
+num_machines: 2
+machine_rank: 0
+num_processes: 48
