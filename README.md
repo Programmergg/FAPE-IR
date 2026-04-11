@@ -2,7 +2,7 @@
   <img src="figs/logo.png" height="240">
 </p>
 
-### FAPE-IR: Frequency-Aware Planning and Execution Framework for All-in-One Image Restoration [CVPR 2026 Accept]
+### FAPE-IR: Frequency-Aware Planning and Execution Framework for All-in-One Image Restoration
 ![visitors](https://visitor-badge.laobi.icu/badge?page_id=Programmergg.FAPE-IR)
 [![GitHub Stars](https://img.shields.io/github/stars/Programmergg/FAPE-IR?style=social)](https://github.com/Programmergg/FAPE-IR)
 
