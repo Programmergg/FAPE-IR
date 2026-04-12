@@ -16,6 +16,26 @@
 
 *The three authors are struggling with their doctoral dissertations. Please wait a moment while they work on cleaning the code and providing new directions and suggestions.*
 
+## :rocket: Future Exploration
+
+Beyond the current release, we would like to continue exploring the following directions:
+
+1. **Smaller foundation models for practical deployment.**  
+   One important direction is to build more lightweight unified restoration models based on smaller foundation models, such as models around the **1.3B scale**, or even models suitable for **on-device deployment**. We believe this is essential for bringing unified low-level restoration from research prototypes to scenarios with real practical value, where efficiency, memory, and deployment cost are critical.
+
+2. **Understanding and mitigating artifacts in flow-matching-based low-level restoration.**  
+   In our experiments on low-level image and video restoration, we observe a very important phenomenon: although model families such as **WAN** and **FLUX** can work well for cross-modal generation, they often suffer from severe **artifacts** under the **image-to-image paradigm** or **video-to-video paradigm** required by low-level restoration. This issue appears to be a common problem in large low-level diffusion / flow-matching-style models, and we believe it deserves much deeper investigation. Understanding why these artifacts emerge, and how to suppress them without sacrificing generation quality, will be one of our major future focuses.  
+   More specifically, taking recent **video foundation models for super-resolution** as an example, current practice often relies on a **two-stage pipeline**: first performing **flow-matching pretraining**, and then applying an additional post-training stage such as **Adversarial Post-Training (APT)** or **Distribution Matching Distillation (DMD)** to obtain better restoration quality. In our view, this paradigm is still not aesthetically satisfying from a modeling perspective. A more fundamental question is: **why can we not obtain the best restoration performance directly from flow-matching training itself?**  
+   We believe this question is highly important for the future of low-level generative restoration. If high-quality low-level restoration always depends on extra post-training, refinement, or distillation stages, then the overall framework becomes less unified, less elegant, and harder to analyze. In contrast, achieving strong results **directly from the original FM objective** would be much cleaner and more principled. This may require better low-level objectives, better noise / trajectory design, or restoration-oriented training strategies specifically tailored to image-to-image and video-to-video settings.
+
+3. **Unified autoregressive and unified diffusion paradigms for low-level vision.**  
+   Another important direction is to explore whether low-level image and video restoration can be realized in a more truly **unified autoregressive** manner, as well as in a more principled **unified diffusion** framework. We hope to study how these two paradigms can better support unified low-level understanding, planning, and generation, and whether they can offer cleaner, simpler, and more scalable solutions for restoration tasks.
+
+4. **Combining low-level restoration, unified models, and reinforcement learning.**  
+   We are also interested in exploring how **low-level restoration**, **unified foundation models**, and **reinforcement learning** can be connected together. We believe this may open up new opportunities for better long-horizon optimization, adaptive restoration strategies, and more intelligent decision-making in both image and video restoration systems.
+
+We will continue maintaining this repository and update it as these directions become more mature.
+
 ---
 
 ## 🚩 New Features/Updates
