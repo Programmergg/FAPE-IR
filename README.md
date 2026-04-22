@@ -72,7 +72,7 @@ conda create -n fapeir python=3.11 -y
 conda activate fapeir
 
 # Please install dependencies according to your local CUDA / PyTorch setup.
-# A reproducible requirements file will be released soon.
+pip install -r requirements.txt
 ```
 
 ### :arrow_right: Prepare Initial Weights
