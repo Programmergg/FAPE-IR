@@ -57,7 +57,8 @@ Please **star** this repo to get updates.
 |:-|:-|
 | Initial weights | [Hugging Face - FAPEIR_Uniworld](https://huggingface.co/David0219/FAPEIR_Uniworld) |
 | Pretrained checkpoints / model zoo | TBD |
-| Trainset/Testset (GT/LQ) | [Hugging Face - FAPE-IR-Training](https://huggingface.co/datasets/David0219/FAPE-IR-Training) |
+| Trainset (GT/LQ) | [Hugging Face - FAPE-IR-Training](https://huggingface.co/datasets/David0219/FAPE-IR-Training) |
+| Testset (GT/LQ) | TBD |
 
 ---
 
