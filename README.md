@@ -43,7 +43,6 @@ We will continue maintaining this repository and update it as these directions b
 - ✅ Apr 10, 2026. Release training and testing code.
 - ✅ Apr 12, 2026. Initial weights are now available on Hugging Face.
 - 🚧 TBD. Release pretrained checkpoints & model zoo.
-- 🚧 TBD. Release standalone inference / evaluation scripts and example results.
 
 Please **star** this repo to get updates.
 
@@ -56,7 +55,7 @@ Please **star** this repo to get updates.
 | Item | Link |
 |:-|:-|
 | Initial weights | [Hugging Face - FAPEIR_Uniworld](https://huggingface.co/David0219/FAPEIR_Uniworld) |
-| Pretrained checkpoints / model zoo | TBD |
+| Pretrained checkpoints / model zoo | [Hugging Face - FAPEIR_Uniworld Weights](https://huggingface.co/David0219/FAPEIR_Uniworld_Weights/tree/main) |
 | Trainset (GT/LQ) | [Hugging Face - FAPE-IR-Training](https://huggingface.co/datasets/David0219/FAPE-IR-Training) |
 | Testset (GT/LQ) | [Hugging Face - FAPE-IR-Testing](https://huggingface.co/datasets/David0219/FAPE-IR-Testing) |
 
