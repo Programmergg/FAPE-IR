@@ -42,7 +42,7 @@ We will continue maintaining this repository and update it as these directions b
 - ✅ Nov 25, 2025. Release the arXiv paper.
 - ✅ Apr 10, 2026. Release training and testing code.
 - ✅ Apr 12, 2026. Initial weights are now available on Hugging Face.
-- 🚧 TBD. Release pretrained checkpoints & model zoo.
+- ✅ Jul 01, 2026. Release pretrained checkpoints & model zoo.
 
 Please **star** this repo to get updates.
 
