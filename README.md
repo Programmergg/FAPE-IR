@@ -423,11 +423,12 @@ A practical workflow is:
 If you use this work, please cite:
 
 ```bibtex
-@article{liu2025fape,
+@inproceedings{liu2026fape,
   title={FAPE-IR: Frequency-Aware Planning and Execution Framework for All-in-One Image Restoration},
   author={Liu, Jingren and Xu, Shuning and Yang, Qirui and Wang, Yun and Chen, Xiangyu and Ji, Zhong},
-  journal={arXiv preprint arXiv:2511.14099},
-  year={2025}
+  booktitle={Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition},
+  pages={15561--15573},
+  year={2026}
 }
 ```
 
