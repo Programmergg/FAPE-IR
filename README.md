@@ -2,7 +2,7 @@
   <img src="figs/logo.png" height="240">
 </p>
 
-## :rocket: We are actively advancing the features of FAPE-IR v2 and FAPE-IR video.
+## :rocket: We are actively advancing the features of more fast and light FAPE-IR v2 + FAPE-IR Video.
 
 ### FAPE-IR: Frequency-Aware Planning and Execution Framework for All-in-One Image Restoration
 ![visitors](https://visitor-badge.laobi.icu/badge?page_id=Programmergg.FAPE-IR)
